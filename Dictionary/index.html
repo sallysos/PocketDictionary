@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dictionary Mode</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="class-top">
+            <header class="class-header-dictionary">
+                <nav aria-label="Switch Mode" class="class-nav" data-type="sites-menu" role="tablist">
+                    <a 
+                        href="/Dictionary/index.html" 
+                        aria-selected="true"
+                        class="class-tab"
+                        data-linkmodule="site-navigation"
+                        data-linkmodule_position="1"
+                        data-type="sites-menu"
+                        id="dictionary-tab"
+                        role="tab"
+                        >
+                        <div class="class-tab-logo">
+                            <h1>Dictionary</h1>
+                        </div>
+                    </a>
+                    <a 
+                        href="/MyWords/index.html" 
+                        aria-selected="false"
+                        class="class-tab"
+                        data-linkmodule="site-navigation"
+                        data-linkmodule_position="2"
+                        data-type="sites-menu"
+                        id="mywords-tab"
+                        role="tab"
+                        >
+                        <div class="class-tab-logo">
+                            <h1>My Words</h1>
+                        </div>
+                    </a>
+                </nav>
+            </header>
+            <form class="class-search" action="/Dictionary/results.html" method="get">
+                <div class="class-search-bar">
+                    <input 
+                        aria-autocomplete="list" 
+                        autocapitalize="none" 
+                        autocomplete="off" 
+                        autocorrect="off" 
+                        id="search-bar"
+                        placeholder="Search a word"
+                        spellcheck="false"
+                        type="text"
+                        value
+                        >
+                    <button
+                        type="submit"
+                        class="class-search-button"
+                        data-type="button">
+                        <img src="/Images/search.svg" alt="Search Icon">
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+        <footer class="class-footer">
+            <a href="mailto:sallyso2025@northwestern.edu">Contact Me</a>
+        </footer>
+    </body>
+</html>

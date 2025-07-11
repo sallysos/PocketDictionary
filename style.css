@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html, body {
+  height: 100%;
+}
+/* start */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    line-height: 1;
+}
+
+.class-top {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+.class-header-dictionary {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+}
+.class-nav {
+    flex: 1;
+    display: flex;
+}
+.class-tab {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: lightgray;   
+    border-bottom: none;        
+    margin-right: -2px;         
+    color: black;
+    position: relative;
+    border-top-left-radius: 8px;  
+    border-top-right-radius: 8px;      
+}
+
+.class-tab[aria-selected="true"] {
+    background-color: white;    
+    z-index: 10;                 
+    font-weight: bold;
+}
+.class-tab:hover {
+    background-color: #f0f0f0;
+}
+/* search bar */
+.class-search {
+    width: 100%;
+    display: flex;
+    padding: 1rem 1rem;
+    background-color: white;
+}
+.class-search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: calc(100% - 2rem);
+}
+#search-bar {
+    flex: 1;
+    padding: 0.5rem;
+    border: 2px solid #aaa;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+.class-search-button {
+    padding: 0.5rem;
+    border: 2px solid #aaa;
+    background-color: white;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+.class-search-button img {
+    width: 1rem;
+    height: 1rem;
+}
+/* results */
+.class-go-to-mine {
+    padding: 1rem 1.5rem;
+}
+.class-result {
+    padding: 1rem 1.5rem;
+    background: #fff;
+}
+.class-result h1 {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.class-result h2 {
+    margin: 1rem 0 0.5rem;
+    font-size: 2rem;
+}
+.class-result p {
+    margin: 1rem 0.5rem;
+    font-size: 1.2rem;
+}
+.class-definition p {
+    padding: 1rem 1.5rem;
+}
+.class-go-to-dict {
+    padding: 1rem 1.5rem 2rem;
+}
+
+/* my library */
+.class-content {
+    flex: 1;
+    display: flex;
+}
+.class-menubar {
+    width: 150px;              
+    background-color: white;
+    border-right: 1px solid #ddd;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.class-menubar-nav li + li {
+  margin-top: 0.5rem;
+}
+
+.menubar-nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+.class-maincontent {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+.class-all-header h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* footer */
+.class-footer {
+    background-color: black;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.class-footer a {
+    color: white;
+    font-weight: 600;
+}
