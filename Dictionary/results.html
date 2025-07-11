@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dictionary Mode</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="class-top">
+            <header class="class-header-dictionary">
+                <nav aria-label="Switch Mode" class="class-nav" data-type="sites-menu" role="tablist">
+                    <a 
+                        href="/Dictionary/index.html" 
+                        aria-selected="true"
+                        class="class-tab"
+                        data-linkmodule="site-navigation"
+                        data-linkmodule_position="1"
+                        data-type="sites-menu"
+                        id="dictionary-tab"
+                        role="tab"
+                        >
+                        <div class="class-tab-logo">
+                            <h1>Dictionary</h1>
+                        </div>
+                    </a>
+                    <a 
+                        href="/MyWords/index.html" 
+                        aria-selected="false"
+                        class="class-tab"
+                        data-linkmodule="site-navigation"
+                        data-linkmodule_position="2"
+                        data-type="sites-menu"
+                        id="mywords-tab"
+                        role="tab"
+                        >
+                        <div class="class-tab-logo">
+                            <h1>My Words</h1>
+                        </div>
+                    </a>
+                </nav>
+            </header>
+            <form class="class-search" action="/Dictionary/results.html" method="get">
+                <div class="class-search-bar">
+                    <input 
+                        aria-autocomplete="list" 
+                        autocapitalize="none" 
+                        autocomplete="off" 
+                        autocorrect="off" 
+                        id="search-bar"
+                        placeholder="Search a word"
+                        spellcheck="false"
+                        type="text"
+                        value
+                        >
+                    <button
+                        type="submit"
+                        class="class-search-button"
+                        data-type="button">
+                        <img src="/Images/search.svg" alt="Search Icon">
+                    </button>
+                </div>
+            </form>
+            <div class="class-go-to-mine">
+                <p>This word is already in 
+                    <a href="/MyWords/index.html">Your Library</a>
+                </p>
+            </div>
+            <div class="class-result">
+                <h1>Word</h1>
+                <p>[wurd]</p>
+                <div class="class-definition">
+                    <h2>noun</h2>
+                    <p>1. a unit of language, consisting of one or more spoken sounds or their written representation, that functions as a principal carrier of meaning. Words are composed of one or more morphemes and are either the smallest units susceptible of independent use or consist of two or three such units combined under certain linking conditions, as with the loss of primary accent that distinguishes the one-word blackbird (primary stress on “black”, and secondary stress on “bird”) from black bird (primary stress on both words). Words are usually separated by spaces in writing, and are distinguished phonologically, as by accent, in many languages.</p>
+                    <p>2. (used in combination with the first letter of an offensive or unmentionable word, the first letter being lowercase or uppercase, with or without a following hyphen).</p>
+                </div>
+            </div>
+            <div class="class-go-to-dict">
+                <p>Search Merriam-Webster for  
+                    <a href="https://dictionary.com">this word</a>
+                </p>
+            </div>
+        </div>
+        
+        <footer class="class-footer">
+            <a href="mailto:sallyso2025@northwestern.edu">Contact Me</a>
+        </footer>
+    </body>
+</html>
