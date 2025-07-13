@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Folder 1 My Words</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="class-top">
+
+    <header class="class-header-dictionary">
+      <nav aria-label="Switch Mode" class="class-nav" role="tablist">
+        <a href="/Dictionary/index.html"
+           aria-selected="false"
+           class="class-tab"
+           role="tab"
+           id="dictionary-tab">
+          <div class="class-tab-logo"><h1>Dictionary</h1></div>
+        </a>
+        <a href="/MyWords/index.html"
+           aria-selected="true"
+           class="class-tab"
+           role="tab"
+           id="mywords-tab">
+          <div class="class-tab-logo"><h1>My Words</h1></div>
+        </a>
+      </nav>
+    </header>
+
+    <div class="class-content">
+      <aside class="class-menubar">
+        <nav class="class-menubar-nav">
+          <ul>
+            <li><a href="/MyWords/index.html" class="active">My Folders</a></li>
+            <li><a href="/MyWords/all.html">All Words</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+
+      <main class="class-maincontent">
+        <div class="class-folders-header">
+          <h1>Folder 1</h1>
+          <div class="class-sort">
+            <button class="class-add-button">+ Add</button>
+            <label for="sort-select">Sort:</label>
+            <select id="sort-select" class="class-sort-select">
+              <option value="default">Default</option>
+              <option value="alphabetical">A → Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="class-folder-grid">
+          <div class="class-folder-card">
+            <div class="card-content">
+              <h2>Apple</h2>
+              <p>the round fruit of a tree of the rose family, which typically has thin red or green skin and crisp flesh.</p>
+            </div>
+            <button class="class-delete-button" aria-label="Delete ‘Example’">
+              &times;
+            </button>
+          </div>
+
+          <div class="class-folder-card">
+            <div class="card-content">
+              <h2>Bear</h2>
+              <p>a large, heavy mammal that walks on the soles of its feet, having thick fur and a very short tail.</p>
+            </div>
+            <button class="class-delete-button" aria-label="Delete ‘Test’">
+              &times;
+            </button>
+          </div>
+
+        </div>
+
+      </main>
+    </div>
+
+  </div>
+
+  <footer class="class-footer">
+    <a href="mailto:sallyso2025@northwestern.edu">Contact Me</a>
+  </footer>
+</body>
+</html>
