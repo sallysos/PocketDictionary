@@ -50,8 +50,45 @@
                 </aside>
                 <main class="class-maincontent">
                     <div class="class-folders-header">
-                        <h1>Your Folders</h1>
-                        
+                        <h1>My Folders</h1>
+                        <div class="class-sort">
+                            <label for="sort-select">Sort by:</label>
+                            <select id="sort-select" class="class-sort-select">
+                                <option value="name">Name (A → Z)</option>
+                                <option value="date">Date Created</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="class-folder-grid">
+                        <a href="/MyWords/folder1.html" class="class-folder-card">
+                            <img
+                                src="/Images/folder.png"
+                                alt="Folder icon"
+                                class="folder-icon"
+                            >
+                            <div class="card-content">
+                                <h2>Folder 1</h2>
+                                <p>2 words</p>
+                            </div>
+                            <button class="class-delete-button" aria-label="Delete ‘Folder 1’">
+                                &times;
+                            </button>
+                        </a>
+                        <a href="/MyWords/folder2.html" class="class-folder-card">
+                            <img
+                                src="/Images/folder.png"
+                                alt="Folder icon"
+                                class="folder-icon"
+                            >
+                            <div class="card-content">
+                                <h2>Folder 2</h2>
+                                <p>0 words</p>
+                            </div>
+                            <button class="class-delete-button" aria-label="Delete ‘Folder 1’">
+                                &times;
+                            </button>
+                        </a>
                     </div>
                 </main>
             </div>

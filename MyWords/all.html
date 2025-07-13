@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>My Words Mode</title>
+        <title>All Words My Words</title>
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
@@ -49,10 +49,38 @@
                     </nav>
                 </aside>
                 <main class="class-maincontent">
-                    <div class="class-all-header">
+                    <div class="class-folders-header">
                         <h1>All Words</h1>
-                        <p>Words in this folder (37)</p>
+                        <div class="class-sort">
+                            <label for="sort-select-all">Sort:</label>
+                            <select id="sort-select-all" class="class-sort-select">
+                                <option value="recent">Recently Added</option>
+                                <option value="alphabetical">A → Z</option>
+                            </select>
+                        </div>
                     </div>
+                    
+                    <div class="class-folder-grid">
+                        <div class="class-folder-card">
+                            <div class="card-content">
+                                <h2>Apple</h2>
+                                <p>the round fruit of a tree of the rose family, which typically has thin red or green skin and crisp flesh.</p>
+                            </div>
+                            <button class="class-delete-button" aria-label="Delete ‘Aberration’">
+                                &times;
+                            </button>
+                        </div>
+
+                        <div class="class-folder-card">
+                            <div class="card-content">
+                                <h2>Bear</h2>
+                                <p>a large, heavy mammal that walks on the soles of its feet, having thick fur and a very short tail.</p>
+                            </div>
+                            <button class="class-delete-button" aria-label="Delete ‘Zephyr’">
+                                &times;
+                            </button>
+                        </div>
+
                 </main>
             </div>
             
