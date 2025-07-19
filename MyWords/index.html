@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>My Words Mode</title>
+        <title>My Words</title>
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
@@ -10,7 +10,7 @@
             <header class="class-header-dictionary">
                 <nav aria-label="Switch Mode" class="class-nav" data-type="sites-menu" role="tablist">
                     <a 
-                        href="/Dictionary/index.html" 
+                        href="/Dictionary/results.html" 
                         aria-selected="false"
                         class="class-tab"
                         data-linkmodule="site-navigation"
@@ -24,7 +24,7 @@
                         </div>
                     </a>
                     <a 
-                        href="/MyWords/index.html" 
+                        href="/MyWords/results.html" 
                         aria-selected="true"
                         class="class-tab"
                         data-linkmodule="site-navigation"
@@ -43,12 +43,25 @@
                 <aside class="class-menubar">
                     <nav class="class-menubar-nav">
                         <ul>
-                            <li><a href="#">My Folders</a></li>
+                            <li><a class="class-selected-menu" href="#">My Folders</a></li>
                             <li><a href="/MyWords/all.html">All Words</a></li>
                         </ul>
                     </nav>
                 </aside>
+                
                 <main class="class-maincontent">
+                    <div class="font-controls">
+                        <button id="increase-font" aria-label="Increase font size" title="Increase font size">Aa+</button>
+                        <button id="decrease-font" aria-label="Decrease font size" title="Decrease font size">Aa−</button>
+                    </div>
+
+                    <div class="theme-controls">
+                        <label for="theme-select">Choose Theme:</label>
+                        <select id="theme-select">
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                        </select>
+                    </div>
                     <div class="class-folders-header">
                         <h1>My Folders</h1>
                         <div class="class-sort">
@@ -98,5 +111,7 @@
         <footer class="class-footer">
             <a href="mailto:sallyso2025@northwestern.edu">Contact Me</a>
         </footer>
+
+        <script src="/scripts/main.js"></script>
     </body>
 </html>
