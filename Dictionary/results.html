@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Dictionary Mode</title>
+        <title>Dictionary</title>
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
@@ -10,7 +10,7 @@
             <header class="class-header-dictionary">
                 <nav aria-label="Switch Mode" class="class-nav" data-type="sites-menu" role="tablist">
                     <a 
-                        href="/Dictionary/index.html" 
+                        href="/Dictionary/results.html" 
                         aria-selected="true"
                         class="class-tab"
                         data-linkmodule="site-navigation"
@@ -59,33 +59,53 @@
                         type="submit"
                         class="class-search-button"
                         data-type="button">
-                        <img src="/Images/search.svg" alt="Search Icon">
+                        <img src="/Images/search.jpg" alt="Search Icon">
                     </button>
                 </div>
             </form>
-            <div class="class-go-to-mine">
-                <p>This word is already in 
-                    <a href="/MyWords/index.html">Your Library</a>
-                </p>
+
+            <div class="font-controls">
+                <button id="increase-font" aria-label="Increase font size" title="Increase font size">Aa+</button>
+                <button id="decrease-font" aria-label="Decrease font size" title="Decrease font size">Aa−</button>
             </div>
-            <div class="class-result">
-                <h1>Word</h1>
-                <p>[wurd]</p>
-                <div class="class-definition">
-                    <h2>noun</h2>
-                    <p>1. a unit of language, consisting of one or more spoken sounds or their written representation, that functions as a principal carrier of meaning. Words are composed of one or more morphemes and are either the smallest units susceptible of independent use or consist of two or three such units combined under certain linking conditions, as with the loss of primary accent that distinguishes the one-word blackbird (primary stress on “black”, and secondary stress on “bird”) from black bird (primary stress on both words). Words are usually separated by spaces in writing, and are distinguished phonologically, as by accent, in many languages.</p>
-                    <p>2. (used in combination with the first letter of an offensive or unmentionable word, the first letter being lowercase or uppercase, with or without a following hyphen).</p>
+
+            <div class="theme-controls">
+                <label for="theme-select">Choose Theme:</label>
+                <select id="theme-select">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+
+            <main class="class-maincontent">
+                <div class="class-go-to-mine">
+                    <p>This word is already in 
+                        <a href="/MyWords/index.html">Your Library</a>
+                    </p>
                 </div>
-            </div>
-            <div class="class-go-to-dict">
-                <p>Search Merriam-Webster for  
-                    <a href="https://dictionary.com">this word</a>
-                </p>
-            </div>
+                <div class="class-result">
+                    <h1>Word</h1>
+                    <p>[wurd]</p>
+                    <div class="class-definition">
+                        <h2>noun</h2>
+                        <p>1. a unit of language, consisting of one or more spoken sounds or their written representation, that functions as a principal carrier of meaning. Words are composed of one or more morphemes and are either the smallest units susceptible of independent use or consist of two or three such units combined under certain linking conditions, as with the loss of primary accent that distinguishes the one-word blackbird (primary stress on “black”, and secondary stress on “bird”) from black bird (primary stress on both words). Words are usually separated by spaces in writing, and are distinguished phonologically, as by accent, in many languages.</p>
+                        <p>2. (used in combination with the first letter of an offensive or unmentionable word, the first letter being lowercase or uppercase, with or without a following hyphen).</p>
+                    </div>
+                </div>
+                <div class="class-go-to-dict">
+                    <p>Search Merriam-Webster for  
+                        <a href="https://dictionary.com">this word</a>
+                    </p>
+                </div>
+            </main>
         </div>
         
         <footer class="class-footer">
             <a href="mailto:sallyso2025@northwestern.edu">Contact Me</a>
         </footer>
+
+        <script src="/scripts/main.js"></script>
+
+
     </body>
 </html>
