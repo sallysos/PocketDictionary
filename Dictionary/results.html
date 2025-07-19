@@ -63,6 +63,20 @@
                     </button>
                 </div>
             </form>
+
+            <div class="font-controls">
+                <button id="increase-font" aria-label="Increase font size" title="Increase font size">Aa+</button>
+                <button id="decrease-font" aria-label="Decrease font size" title="Decrease font size">Aa−</button>
+            </div>
+
+            <div class="theme-controls">
+                <label for="theme-select">Choose Theme:</label>
+                <select id="theme-select">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+
             <div class="class-go-to-mine">
                 <p>This word is already in 
                     <a href="/MyWords/index.html">Your Library</a>
@@ -87,5 +101,28 @@
         <footer class="class-footer">
             <a href="mailto:sallyso2025@northwestern.edu">Contact Me</a>
         </footer>
+
+        <script>
+            let currentSize = 16; 
+            const body = document.body;
+
+            document.getElementById("increase-font").addEventListener("click", () => {
+                currentSize += 2;
+                document.documentElement.style.fontSize = currentSize + "px";
+            });
+
+            document.getElementById("decrease-font").addEventListener("click", () => {
+                if (currentSize > 10) {
+                currentSize -= 2;
+                document.documentElement.style.fontSize = currentSize + "px";
+                }
+            });
+
+            const themeSelect = document.getElementById('theme-select');
+
+            themeSelect.addEventListener('change', function () {
+                document.body.setAttribute('data-theme', this.value);
+            });
+        </script>
     </body>
 </html>
